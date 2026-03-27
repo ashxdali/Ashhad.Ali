@@ -3,327 +3,276 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Portfolio | Future-Proof Architecture</title>
+    <title>Ashhad Ali M P | Professional Portfolio</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-    <!-- Optional Font Awesome for standard icons if needed (we'll mostly use SVGs, but this is a solid fallback) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- Utility / UI Layer -->
-    <div id="scroll-progress"></div>
-    <div id="cursor"></div>
-    <div id="cursor-follower"></div>
 
-    <!-- Cosmic Mesh Background -->
-    <div class="mesh-container">
-        <div class="orb orb-primary"></div>
-        <div class="orb orb-secondary"></div>
-        <div class="orb orb-tertiary"></div>
+    <!-- Animated Aurora Background -->
+    <div class="aurora-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
 
-    <!-- Navigation Bar -->
-    <header class="header neon-glass">
-        <nav class="nav">
-            <!-- Short text for mobile, robust nav for desktop -->
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#gallery" class="hide-mobile">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Header / Nav -->
+    <header class="navbar glass-panel">
+        <div class="container container-nav">
+            <a href="#home" class="logo glow-text">Ashhad Ali</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
     </header>
 
-    <main class="main-content">
-
-        <!-- 1️⃣ HERO SECTION -->
-        <section id="home" class="hero">
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero section">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <p class="subtitle fade-up">HELLO, I AM</p>
-                    <h1 class="hero-name fade-up" style="animation-delay: 0.1s;">YOUR NAME</h1>
-                    <h2 class="hero-title fade-up" style="animation-delay: 0.2s;">
-                        <span class="gradient-text dynamic-title">Cloud Engineer</span>
-                    </h2>
-                    <p class="tagline fade-up" style="animation-delay: 0.3s;">
-                        Building scalable cloud solutions, robust overarching architectures, and modern web applications that drive real impact.
+                    <p class="subtitle reveal fade-bottom">HELLO, I AM</p>
+                    <h1 class="hero-name reveal fade-bottom delay-1">Ashhad Ali M P</h1>
+                    <h2 class="hero-title reveal fade-bottom delay-2">Project Engineer & Cloud Specialist</h2>
+                    <p class="tagline reveal fade-bottom delay-3">
+                        Computer Science and Design Engineering graduate focusing on cloud computing, multi-cloud
+                        storage, and scalable infrastructure management.
                     </p>
-                    <div class="hero-btns fade-up" style="animation-delay: 0.4s;">
-                        <a href="#resume" class="btn btn-primary interactable"><i class="fa-solid fa-download"></i> Download Resume</a>
-                        <a href="#contact" class="btn btn-outline interactable"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                    <div class="hero-btns reveal fade-bottom delay-4">
+                        <a href="./Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="scroll-indicator fade-up" style="animation-delay: 0.8s;">
-                <span>SCROLL DOWN</span>
-                <div class="line"></div>
+                <div class="hero-image-wrapper reveal fade-right delay-2">
+                    <img src="./profile.jpg" alt="Ashhad Ali M P" class="hero-image"
+                        onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop'" />
+                </div>
             </div>
         </section>
 
-        <!-- 2️⃣ ABOUT ME -->
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-heading reveal-text">About Me</h2>
-                <div class="neon-glass showcase-card reveal-card content-grid">
-                    <div class="about-text">
-                        <p class="large-text">
-                            I am a driven technologist bridging the gap between elegant user interfaces and massive-scale cloud infrastructure.
+                <h2 class="section-title reveal fade-left">Professional Summary</h2>
+                <div class="about-grid" style="grid-template-columns: 1fr;">
+                    <!-- Made 1 column since no photo provided -->
+                    <div class="about-text glass-card reveal fade-bottom">
+                        <p>
+                            Computer Science and Design Engineering graduate with hands-on experience in cloud
+                            computing, networking, and infrastructure management. I am skilled in AWS, multi-cloud
+                            storage solutions and network troubleshooting.
                         </p>
-                        <p class="body-text">
-                            My career began deeply rooted in Full-Stack Development, where I honed my skills in HTML, CSS, JavaScript, and Python. As the industry evolved, so did my focus. I transitioned into Cloud Engineering and DevOps, specifically mastering AWS, to architect and manage high-traffic OTT platforms. 
+                        <br />
+                        <p>
+                            I have professional experience operating VoIP systems, executing server migrations, and
+                            performing cloud cost optimization. I pride myself on strong abilities in client
+                            coordination and executing reliable, scalable solutions while continually adapting to new
+                            technical challenges like AI and Machine Learning.
                         </p>
-                        <p class="body-text">
-                            I thrive on optimizing delivery systems, ensuring uptime, and building products that users love. I am currently seeking roles where I can leverage my hybrid background of creative design and hardcore system architecture.
+                        <br />
+                        <p><strong>Personal Traits:</strong> Industrious • Problem-Solving • Collaborative • Adaptable
                         </p>
-                    </div>
-                    <!-- Optional: Placeholder for a professional headshot or cool 3D avatar -->
-                    <div class="about-visual glow-box">
-                        <div class="placeholder-avatar"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3️⃣ SKILLS / TECHNICAL STACK -->
+        <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-heading reveal-text">Technical Stack</h2>
-                
+                <h2 class="section-title reveal fade-left">Technical Skills</h2>
                 <div class="skills-grid">
-                    <!-- Programming -->
-                    <div class="neon-glass skill-box reveal-card">
-                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
-                        <div class="skill-tags">
-                            <span class="tag">JavaScript (ES6+)</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
-                            <span class="tag">HTML5 / CSS3</span>
-                            <span class="tag">React / Node.js</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Cloud & DevOps -->
-                    <div class="neon-glass skill-box reveal-card" style="transition-delay: 0.1s;">
-                        <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
-                        <div class="skill-tags">
-                            <span class="tag highlight">AWS (S3, EC2, IAM)</span>
-                            <span class="tag highlight">CloudFront (CDN)</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Linux</span>
-                            <span class="tag">CI/CD Pipelines</span>
+
+                    <div class="skill-card glass-card reveal fade-bottom">
+                        <h3><i class="fa-solid fa-cloud accent-color"></i> Cloud & Storage</h3>
+                        <div class="tags">
+                            <span class="tag highlight">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Amazon S3</span>
+                            <span class="tag">Azure Blob Storage</span>
+                            <span class="tag">Google Cloud Storage</span>
                         </div>
                     </div>
 
-                    <!-- Tools & Platforms -->
-                    <div class="neon-glass skill-box reveal-card" style="transition-delay: 0.2s;">
-                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Git / GitHub</span>
-                            <span class="tag">VS Code</span>
-                            <span class="tag">Postman</span>
-                            <span class="tag">Figma</span>
+                    <div class="skill-card glass-card reveal fade-bottom delay-1">
+                        <h3><i class="fa-solid fa-network-wired accent-color"></i> Networking & Systems</h3>
+                        <div class="tags">
+                            <span class="tag">IPv4 / IPv6</span>
+                            <span class="tag highlight">TCP/IP</span>
+                            <span class="tag">Firewalls & VPN</span>
+                            <span class="tag">NAT</span>
+                            <span class="tag">Switch Configuration</span>
+                            <span class="tag">Linux / Windows OS</span>
                         </div>
                     </div>
 
-                    <!-- Design & Media -->
-                    <div class="neon-glass skill-box reveal-card" style="transition-delay: 0.3s;">
-                        <h3><i class="fa-solid fa-palette"></i> Design & Media</h3>
-                        <div class="skill-tags">
-                            <span class="tag highlight">UI / UX Design</span>
-                            <span class="tag">Photoshop</span>
-                            <span class="tag">Blender 3D</span>
-                            <span class="tag">Video/Photo Editing</span>
+                    <div class="skill-card glass-card reveal fade-bottom delay-2">
+                        <h3><i class="fa-solid fa-code accent-color"></i> Software & Dev</h3>
+                        <div class="tags">
+                            <span class="tag highlight">Python</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">SQL / Java / C</span>
+                            <span class="tag">Git / GitLab</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Unity / Blender</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4️⃣ WORK EXPERIENCE -->
+        <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="container">
-                <h2 class="section-heading reveal-text">Work Experience</h2>
-                
+                <h2 class="section-title reveal fade-left">Work Experience</h2>
                 <div class="timeline">
-                    <!-- Job 1 -->
-                    <div class="timeline-item reveal-card">
-                        <div class="timeline-dot"></div>
-                        <div class="neon-glass timeline-content">
-                            <span class="timeline-date">Jan 2024 - Present</span>
-                            <h3>Cloud Infrastructure Engineer</h3>
-                            <h4>TechNova Solutions</h4>
-                            <p class="timeline-desc">
-                                Managed AWS cloud storage & delivery for enterprise applications. Handled R&D and production support for high-stakes deployments.
+
+                    <div class="timeline-item reveal fade-bottom">
+                        <div class="timeline-date">June 2025 – Present</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Project Engineer</h3>
+                            <h4>RGB Broadcasting Pvt Ltd • Ernakulam, India</h4>
+                            <p>
+                                Managing AWS infrastructure (EC2, S3) and designing multi-cloud storage solutions for
+                                redundancy across AWS, Azure, and GCP. Executing cloud cost optimization and analyzing
+                                retrieval configurations. Handling robust network setups, fixing IP conflicts, managing
+                                firewalls, and troubleshooting IP telephony (Yealink SIP). Coordinated heavily with
+                                clients to deliver tasks and migrate servers with minimal downtime.
                             </p>
-                            <div class="timeline-tech">
-                                <span>AWS S3</span><span>CloudFront</span><span>Linux</span>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Job 2 -->
-                    <div class="timeline-item reveal-card">
-                        <div class="timeline-dot"></div>
-                        <div class="neon-glass timeline-content">
-                            <span class="timeline-date">Jun 2022 - Dec 2023</span>
-                            <h3>Full-Stack Developer</h3>
-                            <h4>Streamlined Media</h4>
-                            <p class="timeline-desc">
-                                Built and supported robust OTT platforms handling thousands of concurrent users. Improved video load times by 40% through CDN optimization.
-                            </p>
-                            <div class="timeline-tech">
-                                <span>Django</span><span>Python</span><span>React</span><span>AWS</span>
-                            </div>
+                    <div class="timeline-item reveal fade-bottom delay-1">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Intern – Machine Learning & AI</h3>
+                            <h4>Keltron Knowledge Centre</h4>
+                            <p>Gained practical knowledge of machine learning algorithms and artificial intelligence
+                                systems, establishing a foundation for advanced data models and NLP architectures.</p>
                         </div>
                     </div>
+
+                    <div class="timeline-item reveal fade-bottom delay-2">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Intern – iOS Development</h3>
+                            <h4>iPlanet Education</h4>
+                            <p>Acquired strong programming background in Swift and core iOS app development paradigms.
+                                Built robust user interfaces for multiple sample applications.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- 5️⃣ PROJECTS (MOST IMPORTANT) -->
+        <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-heading reveal-text">Featured Projects</h2>
-                
-                <div class="bento-grid project-bento">
-                    <!-- Project 1 (Wide Highlight) -->
-                    <div class="neon-glass bento-item bento-wide project-card interactable reveal-card">
-                        <div class="project-content">
-                            <span class="badge primary">AI / Healthcare</span>
-                            <h3>AI-Powered Mental Health Companion</h3>
-                            <p class="problem-solution">
-                                <strong>Problem:</strong> Lack of accessible, immediate mental health support.<br>
-                                <strong>Solution:</strong> Engineered a responsive CBT assistant utilizing natural language processing for real-time inference and support.
-                            </p>
-                            <div class="project-meta">
-                                <strong>Role:</strong> Lead Architect & Full-Stack Developer<br>
-                                <strong>Stack:</strong> Python, Node.js, WebSockets, OpenAI API
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn-text interactable"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-                                <a href="#" class="btn-text interactable"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                            </div>
-                        </div>
+                <h2 class="section-title reveal fade-left">Key Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card glass-card reveal fade-bottom">
+                        <span class="project-badge glow-badge">Cloud Architecture (2026)</span>
+                        <h3>Multi Cloud Storage System</h3>
+                        <p><strong>Stack:</strong> AWS, Azure, GCP<br><br>
+                            Designing a multi-cloud storage framework incorporating AWS S3, Azure Blob, and GCP for high
+                            availability. Managing access control, retrieval metrics, and strict cost optimizations
+                            across providers.</p>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="neon-glass bento-item project-card interactable reveal-card" style="transition-delay: 0.1s;">
-                        <div class="project-content">
-                            <span class="badge">Cloud Infrastructure</span>
-                            <h3>OTT Delivery Optimizer</h3>
-                            <p>Architected custom cloud storage solutions with automated CDN syncing, directly improving stream delivery for high-traffic media platforms.</p>
-                            <div class="project-meta">
-                                <strong>Stack:</strong> AWS CloudFront, S3, EC2, Python
-                            </div>
-                        </div>
+                    <div class="project-card glass-card reveal fade-bottom delay-1">
+                        <span class="project-badge glow-badge">Machine Learning (2024)</span>
+                        <h3>PCB Anomaly Detection</h3>
+                        <p><strong>Stack:</strong> YOLOv5, Python<br><br>
+                            Developed an advanced YOLOv5 anomaly detection model identifying PCB defects with 94.8%
+                            accuracy. Annotated and processed 1,386 specialized images over 75 epochs.</p>
                     </div>
 
-                    <!-- Project 3 -->
-                    <div class="neon-glass bento-item project-card interactable reveal-card" style="transition-delay: 0.2s;">
-                        <div class="project-content">
-                            <span class="badge">Creative / Academic</span>
-                            <h3>Immersive 3D Portfolio MVP</h3>
-                            <p>Developed an experimental WebGL portfolio highlighting UI/UX design and 3D rendering capabilities directly in the browser.</p>
-                            <div class="project-meta">
-                                <strong>Stack:</strong> Three.js, Blender, HTML/CSS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6️⃣ CERTIFICATIONS & 7️⃣ INTERNSHIPS -->
-        <section id="credentials" class="section">
-            <div class="container">
-                <div class="split-section">
-                    
-                    <!-- Left: Certifications -->
-                    <div class="split-column">
-                        <h2 class="section-heading reveal-text">Certifications</h2>
-                        <div class="credentials-list">
-                            <div class="neon-glass credential-card reveal-card">
-                                <h3>AWS Certified Solutions Architect</h3>
-                                <p>Amazon Web Services (AWS) • Issued 2024</p>
-                                <a href="#" class="btn-text small mt-2">View Credential &rarr;</a>
-                            </div>
-                            <div class="neon-glass credential-card reveal-card">
-                                <h3>Machine Learning & AI Bootcamp</h3>
-                                <p>Coursera / Stanford • Issued 2023</p>
-                                <a href="#" class="btn-text small mt-2">View Credential &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Internships -->
-                    <div class="split-column">
-                        <h2 class="section-heading reveal-text">Internships & Training</h2>
-                        <div class="credentials-list">
-                            <div class="neon-glass credential-card reveal-card">
-                                <h3>DevOps Trainee</h3>
-                                <p><strong>CloudSys Inc.</strong> • 3 Months</p>
-                                <p class="text-sm">Learned the foundations of Kubernetes, Docker containerization, and establishing automated deployment pipelines.</p>
-                            </div>
-                            <div class="neon-glass credential-card reveal-card">
-                                <h3>Web Development Intern</h3>
-                                <p><strong>Creative Digital Agency</strong> • 6 Months</p>
-                                <p class="text-sm">Assisted in building responsive marketing websites using modern CSS frameworks and vanilla JavaScript.</p>
-                            </div>
-                        </div>
+                    <div class="project-card glass-card reveal fade-bottom delay-2">
+                        <span class="project-badge glow-badge">Artificial Intelligence (2024)</span>
+                        <h3>Mental Health Virtual Assistant</h3>
+                        <p><strong>Stack:</strong> Python, TensorFlow, SQLite<br><br>
+                            Architected an AI NLP chatbot to administer emotional support. Processed natural language
+                            patterns for clinical depression indicators and utilized encrypted local storage (SQLite).
+                        </p>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- 8️⃣ ACHIEVEMENTS & 9️⃣ EDUCATION -->
+        <!-- Education & Credentials Split -->
         <section id="education" class="section">
             <div class="container">
-                <div class="split-section">
-                    
-                    <!-- Left: Achievements -->
-                    <div class="split-column">
-                        <h2 class="section-heading reveal-text">Achievements & Awards</h2>
-                        <ul class="achievement-list">
-                            <li class="reveal-card">
-                                <i class="fa-solid fa-trophy highlight"></i>
-                                <div>
-                                    <strong>1st Place - National Hackathon 2023</strong>
-                                    <p>Led team to victory with a scalable cloud-saving solution.</p>
+                <div class="contact-layout"> <!-- Reusing grid layout for split view -->
+
+                    <!-- Education -->
+                    <div class="reveal fade-bottom">
+                        <h2 class="section-title" style="margin-bottom:30px; font-size: 2.2rem;">Academic Credentials
+                        </h2>
+                        <div class="timeline" style="margin-left: 0;">
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">2025</div>
+                                <div class="timeline-content glass-card" style="padding:24px;">
+                                    <h3>B.Tech - CS & Design Engineering</h3>
+                                    <h4>Federal Institute of Science and Technology (FISAT)</h4>
                                 </div>
-                            </li>
-                            <li class="reveal-card">
-                                <i class="fa-solid fa-camera highlight"></i>
-                                <div>
-                                    <strong>Head of College Media & Design Team</strong>
-                                    <p>Directed photoshoots, creative video edits, and branding for 10+ major collegiate events.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021</div>
+                                <div class="timeline-content glass-card" style="padding:24px;">
+                                    <h3>HSE (90.75%)</h3>
+                                    <h4>Rahmania HSS, Kozhikode</h4>
                                 </div>
-                            </li>
-                            <li class="reveal-card">
-                                <i class="fa-solid fa-microphone highlight"></i>
-                                <div>
-                                    <strong>Guest Speaker - Tech Seminar</strong>
-                                    <p>Presented on "The Future of Cloud Delivery Systems" to an audience of 200+ students and professionals.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">2019</div>
+                                <div class="timeline-content glass-card" style="padding:24px;">
+                                    <h3>AISSE (83.4%)</h3>
+                                    <h4>Devagiri CMI Public School</h4>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Right: Education -->
-                    <div class="split-column">
-                        <h2 class="section-heading reveal-text">Education</h2>
-                        <div class="neon-glass credential-card reveal-card">
-                            <h3>Bachelor of Technology (Computer Science)</h3>
-                            <p><strong>University of Technology</strong> • Graduated 2023</p>
-                            <p class="text-sm mt-3"><strong>Relevant Coursework:</strong> Distributed Systems, Cloud Computing, Data Structures & Algorithms, UI/UX Design Principles.</p>
+                    <!-- Certifications -->
+                    <div class="reveal fade-bottom delay-1">
+                        <h2 class="section-title" style="margin-bottom:30px; font-size: 2.2rem;">Certifications & Extras
+                        </h2>
+                        <div class="glass-card" style="margin-bottom: 20px;">
+                            <h3 style="margin-bottom: 16px; font-size: 1.3rem;">Core Certifications</h3>
+                            <ul style="color: var(--text-muted); list-style-position: inside; line-height: 1.8;">
+                                <li>NETGEAR AV Level 1</li>
+                                <li>Innovating with Google Cloud AI</li>
+                                <li>Web Application Development (React.js)</li>
+                                <li>Foundation in Cybersecurity (Google)</li>
+                                <li>iOS App Dev using Swift</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 16px; font-size: 1.3rem;">Volunteering & Co-Curricular</h3>
+                            <ul style="color: var(--text-muted); list-style-position: inside; line-height: 1.8;">
+                                <li>Self-Driving Electric Vehicles Workshop (IIT Kharagpur)</li>
+                                <li>Road Safety Awareness Internship</li>
+                                <li>Department Industrial Visit Organizer</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -331,93 +280,47 @@
             </div>
         </section>
 
-        <!-- 🔟 PORTFOLIO / GALLERY -->
-        <section id="gallery" class="section">
-            <div class="container">
-                <h2 class="section-heading reveal-text">Creative Gallery</h2>
-                <p class="section-subtext reveal-text">Visual proof of UI design, 3D modeling, and creative direction capabilities.</p>
-                
-                <div class="masonry-grid">
-                    <!-- Gallery Items (Placeholder Images for now) -->
-                    <div class="masonry-item reveal-card interactable" data-type="UI Design">
-                        <!-- Using unsplash abstract tech images as placeholders until user provides real images -->
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=800&fit=crop" alt="UI Design App">
-                        <div class="item-overlay"><span>UI/UX Dashboard Concept</span></div>
-                    </div>
-                    <div class="masonry-item reveal-card interactable" data-type="3D Render">
-                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&h=600&fit=crop" alt="3D Blender Render">
-                        <div class="item-overlay"><span>Abstract WebGL Render</span></div>
-                    </div>
-                    <div class="masonry-item reveal-card interactable" data-type="Photography">
-                        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=600&h=600&fit=crop" alt="Event Photography">
-                        <div class="item-overlay"><span>Media Team Event Photography</span></div>
-                    </div>
-                    <div class="masonry-item reveal-card interactable" data-type="UI Design">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=900&fit=crop" alt="Mobile App UI">
-                        <div class="item-overlay"><span>Mobile Fintech App UI</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 1️⃣1️⃣ RESUME SECTION -->
-        <section id="resume" class="section" style="padding: 60px 0;">
-            <div class="container">
-                <div class="neon-glass resume-banner reveal-card text-center">
-                    <h2>Ready to look deeper?</h2>
-                    <p>Review my full career history, formatted specifically for Applicant Tracking Systems.</p>
-                    <a href="#" class="btn btn-primary interactable mt-4" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download Official Resume PDF</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 1️⃣2️⃣ CONTACT SECTION & 1️⃣3️⃣ SOCIAL LINKS -->
+        <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-heading center reveal-text">Establish Signal (Contact)</h2>
-                
-                <div class="contact-grid">
-                    <!-- Left: Info & Socials -->
-                    <div class="contact-info reveal-card">
-                        <h3>Let's build the future together.</h3>
-                        <p>I am currently open to full-time roles as a Cloud Engineer, Full-Stack Developer, or hybrid positions. Reach out directly.</p>
-                        
-                        <div class="info-list">
-                            <div class="info-item">
-                                <i class="fa-solid fa-envelope highlight"></i>
-                                <span>hello@yourdomain.com</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fa-solid fa-location-dot highlight"></i>
-                                <span>Global / Remote / Your City</span>
-                            </div>
+                <h2 class="section-title reveal fade-left">Establish Connection</h2>
+                <div class="contact-layout">
+
+                    <div class="contact-info reveal fade-bottom">
+                        <h3 class="glow-text">Let's build scalable infrastructure.</h3>
+                        <p>Available for critical roles in cloud deployment, full stack environments, and machine
+                            learning infrastructure. Reach me via the channels below.</p>
+
+                        <div class="contact-details">
+                            <p><i class="fa-solid fa-envelope accent-color"></i> ashh6@gmail.com</p>
+                            <p><i class="fa-solid fa-phone accent-color"></i> +91 889196</p>
+                            <p><i class="fa-solid fa-globe accent-color"></i> github.com/dali</p>
                         </div>
-                        
-                        <!-- 13: Social Links -->
-                        <div class="social-links mt-4">
-                            <a href="#" class="social-icon interactable"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon interactable"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" class="social-icon interactable"><i class="fa-brands fa-behance"></i></a>
-                            <a href="#" class="social-icon interactable"><i class="fa-brands fa-twitter"></i></a>
+
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/as6" target="_blank" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin hover-glow"></i></a>
+                            <a href="https://github.com/dali" target="_blank" aria-label="GitHub"><i
+                                    class="fa-brands fa-github hover-glow"></i></a>
                         </div>
                     </div>
 
-                    <!-- Right: Contact Form -->
-                    <div class="neon-glass form-card reveal-card" style="transition-delay: 0.2s;">
+                    <div class="contact-form glass-card reveal fade-bottom delay-1">
                         <form id="contact-form">
-                            <div class="input-group">
-                                <label for="name">RECRUITER / IDENTIFICATION</label>
-                                <input type="text" id="name" placeholder="John Doe" required class="interactable">
+                            <div class="form-group">
+                                <label for="name">Identification (Name)</label>
+                                <input type="text" id="name" required placeholder="John Doe">
                             </div>
-                            <div class="input-group">
-                                <label for="email">REPLY-TO EMAIL</label>
-                                <input type="email" id="email" placeholder="john@company.com" required class="interactable">
+                            <div class="form-group">
+                                <label for="email">Return Signal (Email)</label>
+                                <input type="email" id="email" required placeholder="john@company.com">
                             </div>
-                            <div class="input-group">
-                                <label for="message">DIRECTIVE / JOB OPPORTUNITY</label>
-                                <textarea id="message" rows="4" placeholder="Briefly describe the role or message..." required class="interactable"></textarea>
+                            <div class="form-group">
+                                <label for="message">Transmission Details (Message)</label>
+                                <textarea id="message" rows="4" required
+                                    placeholder="Outline project specifications..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary full-width interactable">Transmit Message</button>
+                            <button type="submit" class="btn btn-primary full-width hover-glow">Transmit Data</button>
                         </form>
                     </div>
                 </div>
@@ -426,28 +329,17 @@
 
     </main>
 
-    <!-- 1️⃣5️⃣ FOOTER -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-left">
-                <p>&copy; 2026 Cosmic Obsidian Architecture. Engineered for the deep web.</p>
-            </div>
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+        <div class="container">
+            <p>&copy; 2026 Ashhad Ali M P</p>
             <div class="footer-links">
                 <a href="#home">Back to Top</a>
-                <a href="#projects">Archives</a>
-                <a href="#resume">Resume</a>
             </div>
         </div>
     </footer>
-    
-    <!-- Lightbox for Gallery (Hidden by default) -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close interactable">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="lightbox-caption"></div>
-    </div>
 
-    <script type="module" src="./main.js"></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>
