@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details — Ashhad Ali M P Portfolio</title>
+  <meta name="description" content="Detailed engineering case study, system architecture diagram, and photo gallery for projects built by Ashhad Ali M P." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <style>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .project-header-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .project-header-nav a {
+      color: var(--blue);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .project-container {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem 4rem 1.5rem;
+    }
+    .project-hero {
+      margin-bottom: 2.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: rgba(0, 212, 255, 0.1);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      border-radius: 50px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+    .project-meta {
+      font-family: var(--font-mono);
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-main-container {
+      margin-bottom: 2rem;
+      background: #05050C;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-main-img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gallery-thumbs-row {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .thumb-card {
+      width: 140px;
+      height: 90px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+    .thumb-card.active {
+      border-color: var(--blue);
+      box-shadow: 0 0 12px rgba(0, 180, 255, 0.4);
+    }
+    .thumb-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .arch-block {
+      background: #080812;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--cyan);
+      overflow-x: auto;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="project-header-nav">
+    <a href="/" class="nav-logo">ashhad<span>@cloud</span>:~$</a>
+    <div style="display: flex; gap: 1rem; align-items: center;">
+      <a href="/#projects">← Back to Portfolio</a>
+      <a href="/assets/Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" class="btn-ghost" style="padding: 0.4rem 0.9rem; font-size: 0.82rem;">
+        <span>📥 Download Resume PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="project-container" id="project-app">
+    <div style="text-align: center; padding: 4rem 0; font-family: var(--font-mono); color: var(--muted);">
+      Loading Project Case Study...
+    </div>
+  </main>
+
+  <script type="module">
+    import { portfolioData } from '/src/data/portfolioData.js';
+
+    function getProjectId() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id') || 'multicloud-storage';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const projId = getProjectId();
+      const proj = portfolioData.projects.find(p => p.id === projId) || portfolioData.projects[0];
+      const app = document.getElementById('project-app');
+
+      document.title = `${proj.title} — Ashhad Ali M P`;
+
+      const galleryImages = proj.galleryImages || [proj.image];
+
+      app.innerHTML = `
+        <div class="project-hero">
+          <div class="project-badge">${proj.badge}</div>
+          <h1 class="project-title">${proj.title}</h1>
+          <div class="project-meta">Category: <strong>${proj.categoryName}</strong> • Timeline: <strong>${proj.period}</strong></div>
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--muted); margin-bottom: 1.5rem;">${proj.summary}</p>
+          
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            ${proj.tech.map(t => `<span class="stack-tag" style="font-size: 0.82rem; padding: 0.3rem 0.75rem;">${t}</span>`).join('')}
+          </div>
+        </div>
+
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 1rem; color: var(--heading);">📸 Project UI & Architecture Photo Gallery</h3>
+        <div class="gallery-main-container">
+          <img id="main-preview-img" src="${galleryImages[0]}" alt="${proj.title}" class="gallery-main-img" />
+        </div>
+
+        <div class="gallery-thumbs-row">
+          ${galleryImages.map((img, i) => `
+            <div class="thumb-card ${i === 0 ? 'active' : ''}" onclick="selectGalleryImage(this, '${img}')">
+              <img src="${img}" alt="Thumbnail ${i+1}" />
+            </div>
+          `).join('')}
+        </div>
+
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 1rem; color: var(--heading);">🚀 Key Engineering Achievements</h3>
+        <div class="highlights-grid">
+          ${proj.highlights.map(h => `
+            <div class="highlight-card">
+              <div style="color: var(--cyan); font-size: 1.2rem; margin-bottom: 0.5rem;">⚙️</div>
+              <p style="font-size: 0.92rem; color: var(--muted); line-height: 1.6;">${h}</p>
+            </div>
+          `).join('')}
+        </div>
+
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 1rem; color: var(--heading);">🏗️ System Architecture & Workflow Diagram</h3>
+        <pre class="arch-block"><code>${proj.architecture}</code></pre>
+
+        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.5rem;">Interested in this Cloud Solution?</h3>
+          <p style="color: var(--muted); margin-bottom: 1.5rem;">Get in touch with Ashhad to discuss implementation, deployment, or infrastructure roles.</p>
+          <a href="/#contact" class="btn-primary">
+            <span>Contact Ashhad Ali</span>
+          </a>
+        </div>
+      `;
+
+      window.selectGalleryImage = (element, imgSrc) => {
+        document.getElementById('main-preview-img').src = imgSrc;
+        document.querySelectorAll('.thumb-card').forEach(tc => tc.classList.remove('active'));
+        element.classList.add('active');
+      };
+    });
+  </script>
+</body>
+</html>

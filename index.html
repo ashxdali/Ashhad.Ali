@@ -1,345 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashhad Ali M P | Professional Portfolio</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashhad Ali M P — Cloud & Infrastructure Engineer</title>
+  <meta name="description" content="Ashhad Ali M P — Cloud & Infrastructure Engineer specializing in AWS, Azure, GCP, VoIP telephony, server migration, and multi-cloud storage." />
+  <meta name="keywords" content="Cloud Engineer, Infrastructure Engineer, AWS, Azure, GCP, Multi-Cloud Storage, VoIP, SIP, Linux, Python, Kerala, India" />
+  <meta property="og:title" content="Ashhad Ali M P — Cloud & Infrastructure Engineer" />
+  <meta property="og:description" content="Multi-cloud storage solutions, VoIP telephony infrastructure, server migration, and AI/ML anomaly detection." />
+  <meta property="og:image" content="/assets/avatar.png" />
+
+  <!-- Google Fonts: Space Grotesk, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
 </head>
-
 <body>
+  <div id="app">
+    <!-- Navbar Container -->
+    <header id="navbar-container"></header>
 
-    <!-- Animated Aurora Background -->
-    <div class="aurora-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
-    <!-- Header / Nav -->
-    <header class="navbar glass-panel">
-        <div class="container container-nav">
-            <a href="#home" class="logo glow-text">Ashhad Ali</a>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
-        </div>
-    </header>
-
+    <!-- Main Content Sections -->
     <main>
-        <!-- Home / Hero Section -->
-        <section id="home" class="hero section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <p class="subtitle reveal fade-bottom">HELLO, I AM</p>
-                    <h1 class="hero-name reveal fade-bottom delay-1">Ashhad Ali M P</h1>
-                    <h2 class="hero-title reveal fade-bottom delay-2">Project Engineer & Cloud Specialist</h2>
-                    <p class="tagline reveal fade-bottom delay-3">
-                        Computer Science and Design Engineering graduate focusing on cloud computing, multi-cloud
-                        storage, and scalable infrastructure management.
-                    </p>
-                    <div class="hero-btns reveal fade-bottom delay-4">
-                        <a href="./Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
-                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper reveal fade-right delay-2">
-                    <img src="./profile.jpg" alt="Ashhad Ali M P" class="hero-image"
-                        onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop'" />
-                </div>
-            </div>
-        </section>
+      <!-- Hero Section with Embedded Interactive Terminal -->
+      <section id="hero"></section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title reveal fade-left">Professional Summary</h2>
-                <div class="about-grid" style="grid-template-columns: 1fr;">
-                    <!-- Made 1 column since no photo provided -->
-                    <div class="about-text glass-card reveal fade-bottom">
-                        <p>
-                            Computer Science and Design Engineering graduate with hands-on experience in cloud
-                            computing, networking, and infrastructure management. I am skilled in AWS, multi-cloud
-                            storage solutions and network troubleshooting.
-                        </p>
-                        <br />
-                        <p>
-                            I have professional experience operating VoIP systems, executing server migrations, and
-                            performing cloud cost optimization. I pride myself on strong abilities in client
-                            coordination and executing reliable, scalable solutions while continually adapting to new
-                            technical challenges like AI and Machine Learning.
-                        </p>
-                        <br />
-                        <p><strong>Personal Traits:</strong> Industrious • Problem-Solving • Collaborative • Adaptable
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- About Section -->
+      <section id="about"></section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title reveal fade-left">Technical Skills</h2>
-                <div class="skills-grid">
+      <!-- Skills Matrix Section -->
+      <section id="skills"></section>
 
-                    <div class="skill-card glass-card reveal fade-bottom">
-                        <h3><i class="fa-solid fa-cloud accent-color"></i> Cloud & Storage</h3>
-                        <div class="tags">
-                            <span class="tag highlight">AWS</span>
-                            <span class="tag">Azure</span>
-                            <span class="tag">GCP</span>
-                            <span class="tag">Amazon S3</span>
-                            <span class="tag">Azure Blob Storage</span>
-                            <span class="tag">Google Cloud Storage</span>
-                        </div>
-                    </div>
+      <!-- Professional Experience & Education Section -->
+      <section id="experience"></section>
 
-                    <div class="skill-card glass-card reveal fade-bottom delay-1">
-                        <h3><i class="fa-solid fa-network-wired accent-color"></i> Networking & Systems</h3>
-                        <div class="tags">
-                            <span class="tag">IPv4 / IPv6</span>
-                            <span class="tag highlight">TCP/IP</span>
-                            <span class="tag">Firewalls & VPN</span>
-                            <span class="tag">NAT</span>
-                            <span class="tag">Switch Configuration</span>
-                            <span class="tag">Linux / Windows OS</span>
-                        </div>
-                    </div>
+      <!-- Featured Projects Section -->
+      <section id="projects"></section>
 
-                    <div class="skill-card glass-card reveal fade-bottom delay-2">
-                        <h3><i class="fa-solid fa-code accent-color"></i> Software & Dev</h3>
-                        <div class="tags">
-                            <span class="tag highlight">Python</span>
-                            <span class="tag">React.js</span>
-                            <span class="tag">SQL / Java / C</span>
-                            <span class="tag">Git / GitLab</span>
-                            <span class="tag">Power BI</span>
-                            <span class="tag">Unity / Blender</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Certifications & Technical Documentation Section -->
+      <section id="certifications-docs"></section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title reveal fade-left">Work Experience</h2>
-                <div class="timeline">
-
-                    <div class="timeline-item reveal fade-bottom">
-                        <div class="timeline-date">June 2025 – Present</div>
-                        <div class="timeline-content glass-card">
-                            <h3>Project Engineer</h3>
-                            <h4>RGB Broadcasting Pvt Ltd • Ernakulam, India</h4>
-                            <p>
-                                Managing AWS infrastructure (EC2, S3) and designing multi-cloud storage solutions for
-                                redundancy across AWS, Azure, and GCP. Executing cloud cost optimization and analyzing
-                                retrieval configurations. Handling robust network setups, fixing IP conflicts, managing
-                                firewalls, and troubleshooting IP telephony (Yealink SIP). Coordinated heavily with
-                                clients to deliver tasks and migrate servers with minimal downtime.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal fade-bottom delay-1">
-                        <div class="timeline-date">2023</div>
-                        <div class="timeline-content glass-card">
-                            <h3>Intern – Machine Learning & AI</h3>
-                            <h4>Keltron Knowledge Centre</h4>
-                            <p>Gained practical knowledge of machine learning algorithms and artificial intelligence
-                                systems, establishing a foundation for advanced data models and NLP architectures.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal fade-bottom delay-2">
-                        <div class="timeline-date">2022</div>
-                        <div class="timeline-content glass-card">
-                            <h3>Intern – iOS Development</h3>
-                            <h4>iPlanet Education</h4>
-                            <p>Acquired strong programming background in Swift and core iOS app development paradigms.
-                                Built robust user interfaces for multiple sample applications.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title reveal fade-left">Key Projects</h2>
-                <div class="projects-grid">
-
-                    <div class="project-card glass-card reveal fade-bottom">
-                        <span class="project-badge glow-badge">Cloud Architecture (2026)</span>
-                        <h3>Multi Cloud Storage System</h3>
-                        <p><strong>Stack:</strong> AWS, Azure, GCP<br><br>
-                            Designing a multi-cloud storage framework incorporating AWS S3, Azure Blob, and GCP for high
-                            availability. Managing access control, retrieval metrics, and strict cost optimizations
-                            across providers.</p>
-                    </div>
-
-                    <div class="project-card glass-card reveal fade-bottom delay-1">
-                        <span class="project-badge glow-badge">Machine Learning (2024)</span>
-                        <h3>PCB Anomaly Detection</h3>
-                        <p><strong>Stack:</strong> YOLOv5, Python<br><br>
-                            Developed an advanced YOLOv5 anomaly detection model identifying PCB defects with 94.8%
-                            accuracy. Annotated and processed 1,386 specialized images over 75 epochs.</p>
-                    </div>
-
-                    <div class="project-card glass-card reveal fade-bottom delay-2">
-                        <span class="project-badge glow-badge">Artificial Intelligence (2024)</span>
-                        <h3>Mental Health Virtual Assistant</h3>
-                        <p><strong>Stack:</strong> Python, TensorFlow, SQLite<br><br>
-                            Architected an AI NLP chatbot to administer emotional support. Processed natural language
-                            patterns for clinical depression indicators and utilized encrypted local storage (SQLite).
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Credentials Split -->
-        <section id="education" class="section">
-            <div class="container">
-                <div class="contact-layout"> <!-- Reusing grid layout for split view -->
-
-                    <!-- Education -->
-                    <div class="reveal fade-bottom">
-                        <h2 class="section-title" style="margin-bottom:30px; font-size: 2.2rem;">Academic Credentials
-                        </h2>
-                        <div class="timeline" style="margin-left: 0;">
-
-                            <div class="timeline-item">
-                                <div class="timeline-date">2025</div>
-                                <div class="timeline-content glass-card" style="padding:24px;">
-                                    <h3>B.Tech - CS & Design Engineering</h3>
-                                    <h4>Federal Institute of Science and Technology (FISAT)</h4>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-date">2021</div>
-                                <div class="timeline-content glass-card" style="padding:24px;">
-                                    <h3>HSE (90.75%)</h3>
-                                    <h4>Rahmania HSS, Kozhikode</h4>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-date">2019</div>
-                                <div class="timeline-content glass-card" style="padding:24px;">
-                                    <h3>AISSE (83.4%)</h3>
-                                    <h4>Devagiri CMI Public School</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Certifications -->
-                    <div class="reveal fade-bottom delay-1">
-                        <h2 class="section-title" style="margin-bottom:30px; font-size: 2.2rem;">Certifications & Extras
-                        </h2>
-                        <div class="glass-card" style="margin-bottom: 20px;">
-                            <h3 style="margin-bottom: 16px; font-size: 1.3rem;">Core Certifications</h3>
-                            <ul style="color: var(--text-muted); list-style-position: inside; line-height: 1.8;">
-                                <li>NETGEAR AV Level 1</li>
-                                <li>Innovating with Google Cloud AI</li>
-                                <li>Web Application Development (React.js)</li>
-                                <li>Foundation in Cybersecurity (Google)</li>
-                                <li>iOS App Dev using Swift</li>
-                            </ul>
-                        </div>
-                        <div class="glass-card">
-                            <h3 style="margin-bottom: 16px; font-size: 1.3rem;">Volunteering & Co-Curricular</h3>
-                            <ul style="color: var(--text-muted); list-style-position: inside; line-height: 1.8;">
-                                <li>Self-Driving Electric Vehicles Workshop (IIT Kharagpur)</li>
-                                <li>Road Safety Awareness Internship</li>
-                                <li>Department Industrial Visit Organizer</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title reveal fade-left">Establish Connection</h2>
-                <div class="contact-layout">
-
-                    <div class="contact-info reveal fade-bottom">
-                        <h3 class="glow-text">Let's build scalable infrastructure.</h3>
-                        <p>Available for critical roles in cloud deployment, full stack environments, and machine
-                            learning infrastructure. Reach me via the channels below.</p>
-
-                        <div class="contact-details">
-                            <p><i class="fa-solid fa-envelope accent-color"></i> ashh6@gmail.com</p>
-                            <p><i class="fa-solid fa-phone accent-color"></i> +91 889196</p>
-                            <p><i class="fa-solid fa-globe accent-color"></i> github.com/dali</p>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="https://linkedin.com/in/as6" target="_blank" aria-label="LinkedIn"><i
-                                    class="fa-brands fa-linkedin hover-glow"></i></a>
-                            <a href="https://github.com/dali" target="_blank" aria-label="GitHub"><i
-                                    class="fa-brands fa-github hover-glow"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="contact-form glass-card reveal fade-bottom delay-1">
-                        <form id="contact-form">
-                            <div class="form-group">
-                                <label for="name">Identification (Name)</label>
-                                <input type="text" id="name" required placeholder="John Doe">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Return Signal (Email)</label>
-                                <input type="email" id="email" required placeholder="john@company.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Transmission Details (Message)</label>
-                                <textarea id="message" rows="4" required
-                                    placeholder="Outline project specifications..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary full-width hover-glow">Transmit Data</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+      <!-- Contact Section -->
+      <section id="contact"></section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer glass-panel">
-        <div class="container">
-            <p>&copy; 2026 Ashhad Ali M P</p>
-            <div class="footer-links">
-                <a href="#home">Back to Top</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Container -->
+    <footer id="footer-container"></footer>
 
-    <script src="./main.js" defer></script>
+    <!-- Global Modal Root for Project Architecture, Resume View & Quick Contact -->
+    <div id="modal-root" class="modal-overlay hidden">
+      <div class="modal-card">
+        <button id="modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>

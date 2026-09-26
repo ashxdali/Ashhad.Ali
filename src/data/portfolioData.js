@@ -1,0 +1,344 @@
+export const portfolioData = {
+  personal: {
+    name: "Ashhad Ali M P",
+    title: "Cloud & Infrastructure Engineer | Computer Science & Design Graduate",
+    location: "Ernakulam / Kozhikode, Kerala, India",
+    email: "ashx6@gmail.com",
+    phone: "+91 8896",
+    linkedin: "https://linkedin.com/in/ashh6",
+    github: "https://github.com/ashxdali",
+    status: "Open for Cloud & Infrastructure Engineering Roles",
+    summary: "Computer Science and Design Engineering graduate with hands-on experience in cloud computing, networking, and infrastructure management. Skilled in AWS, multi-cloud storage solutions, and network troubleshooting. Experienced in VoIP systems, server migration, and cloud cost optimization, with strong abilities in client coordination and delivering reliable, scalable solutions.",
+    stats: [
+      { label: "Cloud Platforms", value: "AWS / Azure / GCP" },
+      { label: "ML Accuracy", value: "94.8% (YOLOv5)" },
+      { label: "HSE Marks", value: "90.75%" },
+      { label: "Experience", value: "Project Engineer" }
+    ],
+    personalTraits: [
+      { title: "Industrious", desc: "Dedicated and relentless in building robust infrastructure and solving system bottlenecks.", icon: "zap" },
+      { title: "Problem-Solving", desc: "Strong analytical mindset for root-cause diagnosis of network conflicts and server migration issues.", icon: "target" },
+      { title: "Collaborative", desc: "Proven track record in cross-team coordination, client communication, and project management.", icon: "users" },
+      { title: "Adaptable", desc: "Quick to master multi-cloud platforms, emerging AI tools, and VoIP telecommunication protocols.", icon: "refresh-cw" }
+    ]
+  },
+
+  skillsCategories: [
+    {
+      id: "cloud",
+      name: "Cloud & Storage",
+      icon: "cloud",
+      skills: [
+        { name: "Amazon Web Services (AWS EC2, S3, CloudWatch)", level: 92 },
+        { name: "Multi-Cloud Storage (AWS S3, Azure Blob, Google Cloud Storage)", level: 94 },
+        { name: "Cloud Cost Optimization & Egress Analysis", level: 90 },
+        { name: "Server Migration & Linux Installation", level: 88 },
+        { name: "Cloud Architecture Diagrams & Documentation", level: 90 }
+      ]
+    },
+    {
+      id: "networking",
+      name: "Networking & Telecom",
+      icon: "network",
+      skills: [
+        { name: "IPv4 / IPv6 Addressing & Subnetting", level: 94 },
+        { name: "Network Switch Configuration & VLANs", level: 90 },
+        { name: "Firewalls, NAT & Routing Rules", level: 92 },
+        { name: "VoIP & SIP Telephony Systems (Yealink IP Phones)", level: 88 },
+        { name: "Network Troubleshooting & IP Conflict Resolution", level: 95 }
+      ]
+    },
+    {
+      id: "programming",
+      name: "Programming & Web",
+      icon: "code",
+      skills: [
+        { name: "Python", level: 90 },
+        { name: "C & Java", level: 82 },
+        { name: "SQL & Relational Databases", level: 85 },
+        { name: "HTML5, CSS3 & JavaScript (ES6+)", level: 88 },
+        { name: "React.js Framework", level: 82 },
+        { name: "Swift (iOS Mobile Development)", level: 78 }
+      ]
+    },
+    {
+      id: "ai-tools",
+      name: "Tools, Software & OS",
+      icon: "cpu",
+      skills: [
+        { name: "YOLOv5 & Computer Vision", level: 90 },
+        { name: "TensorFlow & NLP Emotion Detection", level: 84 },
+        { name: "Power BI & Data Visualization", level: 80 },
+        { name: "Git, GitHub & GitLab Workflows", level: 92 },
+        { name: "LaTeX, Blender & Unity", level: 78 },
+        { name: "Linux (Ubuntu/RHEL) & Windows OS", level: 94 }
+      ]
+    }
+  ],
+
+  experience: [
+    {
+      type: "work",
+      role: "Project Engineer",
+      company: "RGB Broadcasting Pvt Ltd",
+      location: "Ernakulam, India",
+      period: "June 2025 – Present",
+      bullets: [
+        "Managing and maintaining cloud infrastructure using AWS services including EC2, CloudWatch, and S3.",
+        "Designed and implemented multi-cloud storage solutions using AWS S3, Azure Blob Storage, and Google Cloud Storage to ensure high availability and redundancy.",
+        "Performed cloud cost optimization by analyzing storage tiers, retrieval patterns, and egress costs.",
+        "Configured and troubleshoot IP-based communication systems including VoIP and SIP devices (such as Yealink IP phones).",
+        "Handled network configurations involving NAT, firewall rules, VLANs, and IP addressing to ensure seamless connectivity.",
+        "Diagnosed and resolved real-world network problems such as IP conflicts, subnet misconfigurations, and routing issues.",
+        "Performed switch configuration and network setup for stable and secure broadcast communication.",
+        "Executed server installation and migration tasks in Linux-based environments, ensuring minimal downtime and secure data transfer.",
+        "Coordinated with enterprise clients through professional email handling, providing project updates, gathering technical requirements, and resolving queries.",
+        "Managed project workflows, tracked progress, ensured timely delivery of cloud & infrastructure tasks, and prepared technical architecture diagrams, system documentation, and deployment reports."
+      ],
+      tags: ["AWS EC2/S3/CloudWatch", "Azure Blob", "GCP", "VoIP / SIP", "Yealink", "Linux Migration", "Network Firewalls", "Cost Optimization"]
+    },
+    {
+      type: "internship",
+      role: "iOS Development Intern",
+      company: "iPlanet Education",
+      location: "India",
+      period: "2022",
+      bullets: [
+        "Acquired programming skills in Swift and gained a deep understanding of iOS mobile app development architecture.",
+        "Developed user interfaces for multiple sample iOS applications utilizing modern Apple design principles."
+      ],
+      tags: ["Swift", "iOS App Development", "UI Layouts", "Xcode"]
+    },
+    {
+      type: "internship",
+      role: "Machine Learning & AI Intern",
+      company: "Keltron Knowledge Centre",
+      location: "India",
+      period: "2023",
+      bullets: [
+        "Gained practical knowledge of machine learning algorithms and artificial intelligence systems.",
+        "Implemented data preprocessing pipelines and model evaluation metrics for predictive AI tasks."
+      ],
+      tags: ["Python", "Machine Learning", "Artificial Intelligence", "Data Preprocessing"]
+    }
+  ],
+
+  education: [
+    {
+      degree: "B.Tech in Computer Science and Design Engineering",
+      institution: "Federal Institute of Science and Technology (FISAT)",
+      location: "Ernakulam, Kerala",
+      year: "2021 – 2025",
+      details: "Comprehensive undergraduate engineering degree combining computer science, cloud infrastructure, networking, and human-centric system design."
+    },
+    {
+      degree: "Higher Secondary Education (HSE) – 90.75%",
+      institution: "Rahmania HSS",
+      location: "Kozhikode, Kerala",
+      year: "2021",
+      details: "Achieved outstanding academic score of 90.75% in Science stream."
+    },
+    {
+      degree: "High School (AISSE) – 83.4%",
+      institution: "Devagiri CMI Public School",
+      location: "Kozhikode, Kerala",
+      year: "2019",
+      details: "Strong foundational performance in AISSE board examinations."
+    }
+  ],
+
+  projects: [
+    {
+      id: "multicloud-storage",
+      title: "Multi Cloud Storage System",
+      category: "cloud",
+      categoryName: "Cloud Architecture",
+      period: "2026 (In Progress)",
+      image: "/assets/multicloud.png",
+      badge: "AWS + Azure + GCP Integration",
+      summary: "Designing and implementing a multi-cloud storage solution integrating AWS S3, Azure Blob Storage, and Google Cloud Storage for data redundancy, high availability, and cost optimization.",
+      tech: ["AWS S3", "Azure Blob Storage", "Google Cloud Storage", "Access Control", "Egress Optimization", "Python"],
+      galleryImages: [
+        "/assets/multicloud.png",
+        "/assets/multicloud_dashboard.png"
+      ],
+      highlights: [
+        "Designing cloud environment configurations and access control policies for multi-cloud secure data transfer.",
+        "Analyzing storage usage, retrieval patterns, and egress costs across providers to maximize cost efficiency.",
+        "Ensuring data redundancy and zero single-point-of-failure failover across 3 global cloud providers."
+      ],
+      architecture: `
+      Client Upload Request
+         |---> AWS S3 (Primary Object Store & Hot Tier)
+         |---> Azure Blob Storage (Redundant Failover Tier)
+         |---> Google Cloud Storage (Cold Archive & Backup)
+      `
+    },
+    {
+      id: "pcb-anomaly",
+      title: "PCB Anomaly Detection Using Machine Learning",
+      category: "ai",
+      categoryName: "AI & Computer Vision",
+      period: "2024",
+      image: "/assets/pcb_anomaly.png",
+      badge: "94.8% Detection Accuracy",
+      summary: "Developed a YOLOv5-based machine learning model achieving 94.8% accuracy in detecting manufacturing anomalies on printed circuit boards.",
+      tech: ["YOLOv5", "Python", "Computer Vision", "1,386 Preprocessed Images", "75 Epoch Training"],
+      galleryImages: [
+        "/assets/pcb_anomaly.png",
+        "/assets/pcb_yolo_detection.png"
+      ],
+      highlights: [
+        "Preprocessed, resized, annotated, and augmented 1,386 high-resolution PCB images.",
+        "Trained YOLOv5 model for 75 epochs achieving 94.8% precision in identifying solder defects and anomalies.",
+        "Built an automated inspection workflow for industrial hardware quality control."
+      ],
+      architecture: `
+      Raw PCB Image Dataset (1,386 images)
+         -> Resizing, Annotation & Data Augmentation
+         -> YOLOv5 Neural Network Training (75 Epochs)
+         -> Real-Time Anomaly & Defect Bounding Box Output (94.8% Accuracy)
+      `
+    },
+    {
+      id: "mental-health-bot",
+      title: "Mental Health Virtual Assistant Chatbot",
+      category: "web",
+      categoryName: "AI & Web Applications",
+      period: "2024",
+      image: "/assets/mental_health_bot.png",
+      badge: "NLP Emotion Detection",
+      summary: "Built an AI-driven chatbot that provides emotional support and mental health guidance with real-time NLP emotion detection and secure storage.",
+      tech: ["Python", "TensorFlow", "NLP Emotion Detection", "SQLite Storage", "Privacy Encryption"],
+      galleryImages: [
+        "/assets/mental_health_bot.png",
+        "/assets/chatbot_interface.png"
+      ],
+      highlights: [
+        "Implemented NLP-based emotion detection for identifying mental health issues like stress and depression.",
+        "Ensured user data privacy and platform scalability through secure SQLite local data storage.",
+        "Designed empathetic conversation triggers and wellness guidance pathways."
+      ],
+      architecture: `
+      User Text Input -> NLP Emotion Classification Engine
+         -> TensorFlow Sentiment Analysis & Intent Model
+         -> Empathetic Response Generation -> Secure Encrypted SQLite Storage
+      `
+    },
+    {
+      id: "voip-telephony-infrastructure",
+      title: "Enterprise VoIP & Telephony Network Infrastructure",
+      category: "networking",
+      categoryName: "Network Operations",
+      period: "2025",
+      image: "/assets/voip_network_topology.png",
+      badge: "SIP Telephony & Switch Config",
+      summary: "Designed and deployed an enterprise IP telephony network for Yealink IP phones featuring VLAN QoS prioritization, DHCP Option 66 autoprovisioning, and firewall NAT traversal.",
+      tech: ["VoIP / SIP", "Yealink IP Phones", "VLAN QoS", "DHCP Option 66", "NAT Rules"],
+      galleryImages: [
+        "/assets/voip_network_topology.png",
+        "/assets/multicloud.png"
+      ],
+      highlights: [
+        "Configured Yealink IP phones with Option 66 DHCP autoprovisioning across enterprise switch infrastructure.",
+        "Implemented DSCP (EF 46) VLAN QoS rules to prioritize voice traffic over standard data traffic.",
+        "Diagnosed and resolved STUN/TURN NAT traversal issues and SIP registration drops."
+      ],
+      architecture: `
+      IP Phone (Yealink) -> Switch VLAN QoS (Voice Priority)
+         -> Firewall NAT Traversal -> SIP PBX Server
+      `
+    }
+  ],
+
+  certifications: [
+    {
+      title: "NETGEAR AV Level 1",
+      issuer: "NETGEAR Training Academy",
+      icon: "award",
+      description: "Audio-Visual over IP switch setup, multicast routing, and network configuration."
+    },
+    {
+      title: "Innovating with Google Cloud AI",
+      issuer: "Google Cloud",
+      icon: "cloud",
+      description: "Google Cloud AI tools, machine learning pipelines, and cloud AI architecture."
+    },
+    {
+      title: "Web Application Development using React.js",
+      issuer: "Logix Space Technologies (2023)",
+      icon: "code",
+      description: "Component architecture, React hooks, state management, and modern web application development."
+    },
+    {
+      title: "Foundation in Cybersecurity",
+      issuer: "Google",
+      icon: "shield",
+      description: "Cybersecurity fundamentals, network defense, firewalls, and security protocols."
+    },
+    {
+      title: "iOS App Development using Swift",
+      issuer: "iPlanet Education",
+      icon: "smartphone",
+      description: "Swift programming language, iOS SDK, user interface design, and mobile app development."
+    },
+    {
+      title: "Training Workshop on Power Communication",
+      issuer: "Vertical Eye",
+      icon: "message-square",
+      description: "Professional communication skills, client coordination, presentation, and email handling."
+    }
+  ],
+
+  extracurriculars: [
+    {
+      title: "Workshop on Self-Driving Electric Vehicles",
+      organizer: "IIT Kharagpur (2023)",
+      desc: "Participated in specialized technical workshop on autonomous EV sensors, battery technology, and computer vision controls."
+    },
+    {
+      title: "Department Industrial Visit Manager",
+      organizer: "FISAT CS & Design Department",
+      desc: "Organized and managed the Industrial Visit for our engineering department, coordinating logistics and industrial site visits."
+    },
+    {
+      title: "Workshop on Web Application Development using React.js",
+      organizer: "Logix Space Technologies (2023)",
+      desc: "Hands-on training workshop on modern React.js frontend development."
+    },
+    {
+      title: "Internship on Road Safety Awareness",
+      organizer: "Association of Civil Engineers (2022)",
+      desc: "Participated in public safety awareness, traffic data analysis, and civil infrastructure campaigns."
+    },
+    {
+      title: "Inter-College Event Coordinator",
+      organizer: "College Tech Fests",
+      desc: "Volunteered and organized multiple inter-college technical events, workshops, and competitions."
+    }
+  ],
+
+  docs: [
+    {
+      id: "doc-multicloud",
+      title: "Designing Failover Redundancy Across AWS, Azure, and GCP",
+      category: "Cloud Architecture Guide",
+      readTime: "5 min read",
+      snippet: "How to structure object storage buckets with automatic fallback routing, IAM cross-cloud credentials, and egress cost mitigation."
+    },
+    {
+      id: "doc-voip",
+      title: "VoIP & SIP IP Phone Troubleshooting Checklist",
+      category: "Network Engineering",
+      readTime: "4 min read",
+      snippet: "Step-by-step diagnostic guide for resolving NAT traversal issues, SIP registration drops, RTP audio packet loss, and Yealink switch configs."
+    },
+    {
+      id: "doc-yolo",
+      title: "Training YOLOv5 for Micro PCB Solder Defect Detection",
+      category: "Machine Learning Note",
+      readTime: "6 min read",
+      snippet: "Data annotation techniques, hyperparameter tuning for 75 epochs, and deployment strategies for real-time industrial inspection."
+    }
+  ]
+};
