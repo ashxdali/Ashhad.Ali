@@ -154,13 +154,13 @@ export const portfolioData = {
       category: "cloud",
       categoryName: "Cloud Architecture",
       period: "2026 (In Progress)",
-      image: "/assets/multicloud.png",
+      image: "./assets/multicloud.png",
       badge: "AWS + Azure + GCP Integration",
       summary: "Designing and implementing a multi-cloud storage solution integrating AWS S3, Azure Blob Storage, and Google Cloud Storage for data redundancy, high availability, and cost optimization.",
       tech: ["AWS S3", "Azure Blob Storage", "Google Cloud Storage", "Access Control", "Egress Optimization", "Python"],
       galleryImages: [
-        "/assets/multicloud.png",
-        "/assets/multicloud_dashboard.png"
+        "./assets/multicloud.png",
+        "./assets/multicloud_dashboard.png"
       ],
       highlights: [
         "Designing cloud environment configurations and access control policies for multi-cloud secure data transfer.",
@@ -180,13 +180,13 @@ export const portfolioData = {
       category: "ai",
       categoryName: "AI & Computer Vision",
       period: "2024",
-      image: "/assets/pcb_anomaly.png",
+      image: "./assets/pcb_anomaly.png",
       badge: "94.8% Detection Accuracy",
       summary: "Developed a YOLOv5-based machine learning model achieving 94.8% accuracy in detecting manufacturing anomalies on printed circuit boards.",
       tech: ["YOLOv5", "Python", "Computer Vision", "1,386 Preprocessed Images", "75 Epoch Training"],
       galleryImages: [
-        "/assets/pcb_anomaly.png",
-        "/assets/pcb_yolo_detection.png"
+        "./assets/pcb_anomaly.png",
+        "./assets/pcb_yolo_detection.png"
       ],
       highlights: [
         "Preprocessed, resized, annotated, and augmented 1,386 high-resolution PCB images.",
@@ -206,13 +206,13 @@ export const portfolioData = {
       category: "web",
       categoryName: "AI & Web Applications",
       period: "2024",
-      image: "/assets/mental_health_bot.png",
+      image: "./assets/mental_health_bot.png",
       badge: "NLP Emotion Detection",
       summary: "Built an AI-driven chatbot that provides emotional support and mental health guidance with real-time NLP emotion detection and secure storage.",
       tech: ["Python", "TensorFlow", "NLP Emotion Detection", "SQLite Storage", "Privacy Encryption"],
       galleryImages: [
-        "/assets/mental_health_bot.png",
-        "/assets/chatbot_interface.png"
+        "./assets/mental_health_bot.png",
+        "./assets/chatbot_interface.png"
       ],
       highlights: [
         "Implemented NLP-based emotion detection for identifying mental health issues like stress and depression.",
@@ -231,13 +231,13 @@ export const portfolioData = {
       category: "networking",
       categoryName: "Network Operations",
       period: "2025",
-      image: "/assets/voip_network_topology.png",
+      image: "./assets/voip_network_topology.png",
       badge: "SIP Telephony & Switch Config",
       summary: "Designed and deployed an enterprise IP telephony network for Yealink IP phones featuring VLAN QoS prioritization, DHCP Option 66 autoprovisioning, and firewall NAT traversal.",
       tech: ["VoIP / SIP", "Yealink IP Phones", "VLAN QoS", "DHCP Option 66", "NAT Rules"],
       galleryImages: [
-        "/assets/voip_network_topology.png",
-        "/assets/multicloud.png"
+        "./assets/voip_network_topology.png",
+        "./assets/multicloud.png"
       ],
       highlights: [
         "Configured Yealink IP phones with Option 66 DHCP autoprovisioning across enterprise switch infrastructure.",

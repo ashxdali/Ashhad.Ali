@@ -11,7 +11,7 @@ export function renderNavbar(container) {
         <li><a href="#experience" onclick="window.smoothTo(event,'experience')">Experience</a></li>
         <li><a href="#projects" onclick="window.smoothTo(event,'projects')">Projects</a></li>
         <li><a href="#certifications-docs" onclick="window.smoothTo(event,'certifications-docs')">Docs & Certs</a></li>
-        <li><a href="/assets/Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" style="color: var(--cyan); font-weight: 600;">📥 Resume PDF</a></li>
+        <li><a href="./assets/Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" style="color: var(--cyan); font-weight: 600;">📥 Resume PDF</a></li>
         <li><a href="#contact" onclick="window.smoothTo(event,'contact')">Contact</a></li>
       </ul>
       <div class="nav-right-actions">

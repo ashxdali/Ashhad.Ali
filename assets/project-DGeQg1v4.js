@@ -1,4 +1,4 @@
-import{p as o}from"./portfolioData-D7PaftXn.js";/* empty css             */function n(){return new URLSearchParams(window.location.search).get("id")||"multicloud-storage"}document.addEventListener("DOMContentLoaded",()=>{const a=n(),e=o.projects.find(t=>t.id===a)||o.projects[0],s=document.getElementById("project-app");document.title=`${e.title} — Ashhad Ali M P`;const i=e.galleryImages||[e.image];s.innerHTML=`
+import{s as a}from"./portfolioData-D7PaftXn-PeISaGUB.js";/* empty css                      */function n(){return new URLSearchParams(window.location.search).get("id")||"multicloud-storage"}document.addEventListener("DOMContentLoaded",()=>{const o=n(),e=a.projects.find(t=>t.id===o)||a.projects[0],s=document.getElementById("project-app");document.title=`${e.title} — Ashhad Ali M P`;const r=e.galleryImages||[e.image];s.innerHTML=`
         <div class="project-hero">
           <div class="project-badge">${e.badge}</div>
           <h1 class="project-title">${e.title}</h1>
@@ -12,13 +12,13 @@ import{p as o}from"./portfolioData-D7PaftXn.js";/* empty css             */funct
 
         <h3 style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 1rem; color: var(--heading);">📸 Project UI & Architecture Photo Gallery</h3>
         <div class="gallery-main-container">
-          <img id="main-preview-img" src="${i[0]}" alt="${e.title}" class="gallery-main-img" />
+          <img id="main-preview-img" src="${r[0]}" alt="${e.title}" class="gallery-main-img" />
         </div>
 
         <div class="gallery-thumbs-row">
-          ${i.map((t,r)=>`
-            <div class="thumb-card ${r===0?"active":""}" onclick="selectGalleryImage(this, '${t}')">
-              <img src="${t}" alt="Thumbnail ${r+1}" />
+          ${r.map((t,i)=>`
+            <div class="thumb-card ${i===0?"active":""}" onclick="selectGalleryImage(this, '${t}')">
+              <img src="${t}" alt="Thumbnail ${i+1}" />
             </div>
           `).join("")}
         </div>
@@ -43,4 +43,4 @@ import{p as o}from"./portfolioData-D7PaftXn.js";/* empty css             */funct
             <span>Contact Ashhad Ali</span>
           </a>
         </div>
-      `,window.selectGalleryImage=(t,r)=>{document.getElementById("main-preview-img").src=r,document.querySelectorAll(".thumb-card").forEach(l=>l.classList.remove("active")),t.classList.add("active")}});
+      `,window.selectGalleryImage=(t,i)=>{document.getElementById("main-preview-img").src=i,document.querySelectorAll(".thumb-card").forEach(l=>l.classList.remove("active")),t.classList.add("active")}});

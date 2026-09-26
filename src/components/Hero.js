@@ -18,7 +18,7 @@ export function renderHero(container) {
         ${p.summary}
       </p>
       <div class="hero-actions">
-        <a href="/assets/Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" class="btn-primary" style="background: linear-gradient(135deg, #00D4FF 0%, #0072FF 100%); border: none;">
+        <a href="./assets/Ashhad_Ali_Resume.pdf" download="Ashhad_Ali_Resume.pdf" class="btn-primary" style="background: linear-gradient(135deg, #00D4FF 0%, #0072FF 100%); border: none;">
           <span>📥 Download Resume (PDF)</span>
         </a>
         <a href="#projects" onclick="window.smoothTo(event,'projects')" class="btn-ghost">
